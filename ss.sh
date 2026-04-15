@@ -1,3 +1,5 @@
+# Force-update Auth.js with bulletproof validation
+cat << 'EOF' > components/Auth.js
 import React, { useState } from 'react';
 import { Alert, StyleSheet, View, Text, TextInput, TouchableOpacity, ActivityIndicator } from 'react-native';
 import { supabase } from '../lib/supabase';
@@ -153,3 +155,6 @@ const styles = StyleSheet.create({
     fontWeight: '500',
   },
 });
+EOF
+
+echo "✅ Auth.js completely updated with safety checks!"
